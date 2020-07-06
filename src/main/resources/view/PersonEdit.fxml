@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="280.0" prefWidth="400.0" styleClass="background" stylesheets="@style/DarkTheme.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ckCoder.fxTest.controller.PersonEditcontroller">
+    <children>
+        <GridPane AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+            <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label text="First name" />
+                <Label text="Last Name" GridPane.rowIndex="1" />
+                <Label text="City" GridPane.rowIndex="2" />
+                <Label text="Street" GridPane.rowIndex="3" />
+                <Label text="BirthDay" GridPane.rowIndex="4" />
+                <TextField fx:id="firstNameField" promptText="Your First Name" GridPane.columnIndex="1" />
+                <TextField fx:id="lastNameField" promptText="Your Last name" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <TextField fx:id="cityField" promptText="Your city" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <TextField fx:id="streetField" promptText="Your Street " GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <TextField fx:id="birthdayField" promptText="Your birthDay" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            </children>
+        </GridPane>
+        <ButtonBar layoutX="186.0" layoutY="226.0" prefHeight="40.0" prefWidth="200.0">
+            <buttons>
+                <Button mnemonicParsing="false" onAction="#handleOk" text="OK" />
+                <Button mnemonicParsing="false" onAction="#handleCancel" text="Cancel" />
+            </buttons>
+        </ButtonBar>
+    </children>
+</AnchorPane>
